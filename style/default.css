@@ -1,0 +1,13 @@
+.brand{
+	font-size: 24px;
+	margin-left: 50px;
+	font-style: italic;
+	color: white;
+}
+
+body{
+	background: fixed;
+	background-image: url(http://3.bp.blogspot.com/-bk4aRop3iiM/TerMWfn188I/AAAAAAAAEL0/1D8IIJ94u2E/s1600/diabetes%2Bbeer.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%
+}
