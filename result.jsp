@@ -6,16 +6,20 @@
 	<link rel='stylesheet' href='style/default.css' type='text/css'/>
 </head>
 <body>
-	<h2> And We recommened you: </h2>
+	<h2> And We recommended for you: </h2>
 
 <%
 List<String> brands = (List<String>) request.getAttribute("brands");
-if (brands != null){
+if (brands.size() != 0){
 	Iterator it = brands.iterator();
 	while(it.hasNext()){
-	   	out.print("<span class=\"brand\"> try " + it.next() + " </span><br>");
+	   	out.print("<span class=\"brand\"> try " + it.next() + " </span><br>\n");
 	}
+} else{
+	out.print("<span class=\"brand\"> Nothing </span><br>\n");
 }
+
+out.print("<br> Your browser is " + request.getHeader("User-Agent"));
 %>
 
 </body>

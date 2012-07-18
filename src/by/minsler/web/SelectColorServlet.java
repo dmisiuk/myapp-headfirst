@@ -1,4 +1,4 @@
-package by.minsler;
+package by.minsler.web;
 
 import java.io.*;
 import javax.servlet.*;
