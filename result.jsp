@@ -11,6 +11,12 @@
 
 <%
 Logger logger = Logger.getLogger("result.jsp");
+if(session.isNew()){
+	logger.info("Create new session");
+	out.println("<p> Welcome</p>");
+} else{
+	out.println("<p> Welcome Back </p>");
+}
 List<String> brands = (List<String>) request.getAttribute("brands");
 if (brands.size() != 0){
 	Iterator it = brands.iterator();
