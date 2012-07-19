@@ -27,9 +27,19 @@
     <param-value>info@minsler.org</param-value>
   </context-param>
 
+  <context-param>
+    <param-name>logFileProperties</param-name>
+    <param-value>WEB-INF/log4j.properties</param-value>
+  </context-param>
+
   <listener>
     <listener-name>InitContextListener</listener-name>
     <listener-class>by.minsler.web.InitContextListener</listener-class>
+  </listener>
+
+  <listener>
+    <listener-name>Log4jInit</listener-name>
+    <listener-class>by.minsler.web.Log4jInit</listener-class>
   </listener>
   
 </web-app>

@@ -1,4 +1,5 @@
 <%@ page import="java.util.*" %> 
+<%@ page import="org.apache.log4j.Logger" %>
 
 <html>
 <head>
@@ -9,6 +10,7 @@
 	<h2> And We recommended for you: </h2>
 
 <%
+Logger logger = Logger.getLogger("result.jsp");
 List<String> brands = (List<String>) request.getAttribute("brands");
 if (brands.size() != 0){
 	Iterator it = brands.iterator();
