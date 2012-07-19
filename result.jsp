@@ -30,5 +30,8 @@ if (brands.size() != 0){
 out.print("<br> Your browser is " + request.getHeader("User-Agent"));
 %>
 
+<br>
+<a href="<%=response.encodeURL("index.html") %>" >selectbeer</a>
+
 </body>
 </html>
