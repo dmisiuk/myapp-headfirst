@@ -41,5 +41,9 @@
     <listener-name>Log4jInit</listener-name>
     <listener-class>by.minsler.web.Log4jInit</listener-class>
   </listener>
+
+  <session-config>
+    <sesskion-timeout>15</sesskion-timeout>
+  </session-config>
   
 </web-app>
