@@ -21,5 +21,15 @@
   	<servlet-name>BeerParamTest</servlet-name>
   	<url-pattern>/beerparamtest</url-pattern>
   </servlet-mapping>
+
+  <context-param>
+    <param-name>infoemail</param-name>
+    <param-value>info@minsler.org</param-value>
+  </context-param>
+
+  <listener>
+    <listener-name>InitContextListener</listener-name>
+    <listener-class>by.minsler.web.InitContextListener</listener-class>
+  </listener>
   
 </web-app>
