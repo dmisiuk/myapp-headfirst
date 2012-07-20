@@ -1,27 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
-  <servlet>
-    <servlet-name>selectbeer</servlet-name>
-    <servlet-class>by.minsler.web.SelectColorServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>selectbeer</servlet-name>
-    <url-pattern>/selectbeer</url-pattern>
-  </servlet-mapping>
-
-  <servlet>
-  	<servlet-name>BeerParamTest</servlet-name>
-  	<servlet-class>by.minsler.web.BeerParamTest</servlet-class>
-  	<init-param>
-  		<param-name>email</param-name>
-  		<param-value>minsler.by@gmail.com</param-value>
-  	</init-param>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>BeerParamTest</servlet-name>
-  	<url-pattern>/beerparamtest</url-pattern>
-  </servlet-mapping>
-
   <context-param>
     <param-name>infoemail</param-name>
     <param-value>info@minsler.org</param-value>
@@ -45,5 +23,46 @@
   <session-config>
     <sesskion-timeout>15</sesskion-timeout>
   </session-config>
+
+
+  <servlet>
+    <servlet-name>selectbeer</servlet-name>
+    <servlet-class>by.minsler.web.SelectColorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectbeer</servlet-name>
+    <url-pattern>/selectbeer</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  	<servlet-name>BeerParamTest</servlet-name>
+  	<servlet-class>by.minsler.web.BeerParamTest</servlet-class>
+  	<init-param>
+  		<param-name>email</param-name>
+  		<param-value>minsler.by@gmail.com</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BeerParamTest</servlet-name>
+  	<url-pattern>/beerparamtest</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Test cookie</servlet-name>
+    <servlet-class>by.minsler.web.CookieTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Test cookie</servlet-name>
+    <url-pattern>/cookietest</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+    <servlet-name>Check cookie</servlet-name>
+    <servlet-class>by.minsler.web.CookieCheck</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Check cookie</servlet-name>
+    <url-pattern>/cookiecheck</url-pattern>
+  </servlet-mapping>
   
 </web-app>

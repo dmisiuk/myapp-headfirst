@@ -1,4 +1,5 @@
 <%@ page import="java.util.*" %> 
+<jsp:directive.page contentType="text/html; charset=UTF-8" />
 <%@ page import="org.apache.log4j.Logger" %>
 
 <html>
